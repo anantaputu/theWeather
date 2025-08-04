@@ -1,0 +1,162 @@
+:root {
+    --main-bg-color: #ffffff;
+    --card-bg-color: #ffffff;
+    --text-color-dark: #333;
+    --text-color-light: #555;
+    --primary-orange: #ff914d;
+    --secondary-blue: #5c6ef7;
+    --shadow-base: rgba(0, 0, 0, 0.08);
+    --shadow-hover: rgba(0, 0, 0, 0.15);
+    --border-radius-lg: 20px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--main-bg-color);
+    color: var(--text-color-dark);
+}
+
+.main-dashboard-layout {
+    padding: 2rem;
+}
+
+.custom-card {
+    background-color: var(--card-bg-color);
+    border: none;
+    border-radius: var(--border-radius-lg);
+    box-shadow: 0 8px 25px var(--shadow-base);
+    transition: all 0.3s ease-in-out;
+    padding: 1.5rem;
+}
+
+.custom-card:hover {
+    box-shadow: 0 10px 30px var(--shadow-hover);
+}
+
+.card-main-weather {
+    background-image: linear-gradient(to top right, #D8EEF3, #B0E0EB);
+    color: #333;
+    padding: 2rem;
+    overflow: hidden;
+    position: relative;
+    z-index: 1; 
+}
+
+.card-main-weather .weather-icon-large {
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    width: 200px;
+    height: 200px;
+    opacity: 0.8;
+    z-index: 0;
+}
+
+.card-air-quality {
+    background-color: #e0f2f7;
+}
+
+.card-sun-details {
+    background-color: #fcf8e3;
+    position: relative;
+}
+
+.card-tomorrow-forecast {
+    background-image: linear-gradient(to bottom right, #DFF0D8, #C4E6B4);
+    color: #333;
+    padding: 2rem;
+    text-align: center;
+}
+.card-tomorrow-forecast .moon-icon {
+    width: 100px;
+    height: 100px;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 0, 0.5));
+}
+
+.display-temp {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.small-text-muted {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.detail-item strong {
+    color: var(--text-color-dark);
+}
+
+.list-group-item-custom {
+    background-color: transparent;
+    border-bottom: 1px solid rgba(0,0,0,.08);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list-group-item-custom:last-child {
+    border-bottom: none;
+}
+
+.btn-custom-orange {
+    background-color: var(--primary-orange);
+    border-color: var(--primary-orange);
+    color: white;
+    border-radius: 15px;
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
+}
+.btn-custom-orange:hover {
+    background-color: #e07b3b;
+    border-color: #e07b3b;
+    color: white;
+}
+
+.search-input-custom {
+    border-radius: 25px !important;
+    padding-left: 1.5rem;
+    padding-right: 3rem;
+}
+
+.search-input-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+    z-index: 5;
+}
+
+.rounded-xl {
+    border-radius: var(--border-radius-lg) !important;
+}
+
+.side-nav-placeholder {
+    width: 60px;
+    height: 100vh;
+    background-color: white;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.05);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.side-nav-placeholder .nav-item {
+    margin-bottom: 20px;
+}
+.side-nav-placeholder .nav-item i {
+    font-size: 1.5rem;
+    color: #888;
+}
+.side-nav-placeholder .nav-item.active i {
+    color: var(--primary-orange);
+}
+
+.selected-loc {
+    color: var(--text-color-dark);
+}
