@@ -18,13 +18,16 @@
 ### Untuk menjalankan proyek ini di lingkungan lokal Anda, ikuti langkah-langkah berikut:
 
 #### Clone repositori:
-git clone https://github.com/anantaputu/theWeather.git
-cd theweather
+
+'''git clone https://github.com/anantaputu/theWeather.git'''
+'''cd theweather'''
 
 #### Instal dependensi:
+
 Proyek ini membutuhkan react, react-dom, react-router-dom, dan dependensi lain yang sudah terinstal. Jika belum, jalankan perintah berikut:
-npm install
+'''npm install'''
 
 #### Jalankan aplikasi:
-npm start
+
+'''npm start'''
 Buka http://localhost:3000 untuk melihatnya di browser.
